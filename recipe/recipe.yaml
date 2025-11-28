@@ -12,6 +12,7 @@ source:
 build:
   script: ${{ PYTHON }} -m pip install .
   noarch: python
+  number: 0
 
 requirements:
   host:
@@ -29,6 +30,9 @@ tests:
     pip_check: true
 
 about:
+  homepage: https://github.com/dyscolab/symbolite
+  license: MIT
+  license_file: LICENSE
   summary: A minimalistic symbolic package.
   description: |
     ![Package](https://img.shields.io/pypi/v/symbolite?label=symbolite)
@@ -204,3 +208,8 @@ about:
     **Q: Does it aim to be a replacement for SymPy in the future?**
 
     **A:** No
+
+extra:
+  recipe-maintainers:
+    - maurosilber
+    - hgrecco
